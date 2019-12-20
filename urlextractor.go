@@ -69,7 +69,8 @@ func GetUrlsFromFile(fileName string) []string {
 }
 
 func IsValidURL(URL string) bool {
-	_, err := url.ParseRequestURI(URL)
+	parts, err := url.Parse(URL)
+	fmt.Println(parts.Hostname())
 	if err != nil {
 		return false
 	}
