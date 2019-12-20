@@ -4,7 +4,7 @@
 Crawel pages and extract urls from the HTML content using regular expressions.
 
 **Settings:**
-You can make the HTML parser parse the 
+You can make the HTML parser parse the relative links inside href tags by enabling the `ExtractHrefTagsLinks` parameter.
 
 Example:
 ```
